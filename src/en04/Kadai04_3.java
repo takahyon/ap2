@@ -91,7 +91,7 @@ public class Kadai04_3 extends javax.swing.JFrame {
             ResultSet rs = ps.executeQuery();
 
             while (rs.next()) {
-                String result = "学部ID：人数:平均点";
+                String result = "学部ID：人数,平均点";
                 result += rs.getInt("student_id") + ",";
                 result += rs.getString("fullname")+ ",";
                 result += rs.getInt("gakubu_id") + ",";
